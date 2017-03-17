@@ -1,7 +1,8 @@
 # Wordpress Backup Database and Push to Repo
 ## What does it do?
-- Dump the Wordpress database into a file
+- Dump the Wordpress database into a file (http://stackoverflow.com/a/31531996)
 - Update GIT repository
+
 ## How to use?
 - Put the 'backup.php' at the root of your repo. This can be either your template or whole wordpress folder.
 - Update the 'backup.php' with the database details
