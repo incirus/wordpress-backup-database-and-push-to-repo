@@ -1,4 +1,4 @@
-# Wordpress Backup Database and Push to Repo
+# Wordpress Backup Database and Push to Repo for MAMP
 ## What does it do?
 - Dump the Wordpress database into a file (http://stackoverflow.com/a/31531996)
 - Update GIT repository
@@ -16,3 +16,4 @@ $backup_name        = "databasename_backup.sql";
 ```
 
 - The code in 'functions.php' adds an admin menu link under tools. Change the menu URL if needed.
+- To run the code just visit http://localhost:8888/localsite/backup.php
