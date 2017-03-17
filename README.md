@@ -7,7 +7,6 @@
 - Update the 'backup.php' with the database details
 
 ```
-#!php
 $mysqlUserName      = "username";
 $mysqlPassword      = "password";
 $mysqlHostName      = "localhost";
