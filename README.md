@@ -13,3 +13,5 @@ $mysqlHostName      = "localhost";
 $DbName             = "databasename";
 $backup_name        = "databasename_backup.sql";
 ```
+
+- The code in 'functions.php' adds an admin menu link under tools. Change the menu URL if needed.

@@ -6,8 +6,7 @@ function add_repo_admin_menu() {
     $submenu['tools.php'][] = array('<div id="backup">Update REPO</div>', 'manage_options', $url);
 }
 add_action( 'admin_footer', 'make_link_blank' );
-function make_link_blank()
-{
+function make_link_blank(){
     ?>
     <script type="text/javascript">
     jQuery(document).ready(function($) {
