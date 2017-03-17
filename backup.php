@@ -1,11 +1,11 @@
 <?php
 echo '<pre>';
 //ENTER THE RELEVANT INFO BELOW
-$mysqlUserName      = "root";
-$mysqlPassword      = "yardimci2";
+$mysqlUserName      = "username";
+$mysqlPassword      = "password";
 $mysqlHostName      = "localhost";
-$DbName             = "dtv_blog";
-$backup_name        = "dtv_blog.sql";
+$DbName             = "databasename";
+$backup_name        = "databasename_backup.sql";
 
 Export_Database($mysqlHostName,$mysqlUserName,$mysqlPassword,$DbName,  $tables=false, $backup_name=false );
 
@@ -73,7 +73,7 @@ function Export_Database($host,$user,$pass,$name,  $tables=false, $backup_name=f
         } $content .="\n\n\n";
     }
 
-    file_put_contents('dtv_sql/'.$backup_name, $content);
+    file_put_contents('sql/'.$backup_name, $content);
     echo "DB export done!\n";
 }
 
