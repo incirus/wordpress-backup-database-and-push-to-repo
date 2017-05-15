@@ -73,7 +73,8 @@ function Export_Database($host,$user,$pass,$name,  $tables=false, $backup_name=f
         } $content .="\n\n\n";
     }
 
-    file_put_contents('sql/'.$backup_name, $content);
+    $backup_name = $backup_name ? $backup_name : $name.".sql";
+    file_put_contents($backup_name, $content);
     echo "DB export done!\n";
 }
 
